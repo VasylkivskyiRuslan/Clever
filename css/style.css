@@ -18,6 +18,8 @@
 }
 .header-bg .nav-menu ul a {
   padding: 0 15px;
+  height: 65px;
+  display: inline-block;
   font: 14px/65px "OpenSans-Semibold";
   color: #fff;
   text-transform: uppercase;
@@ -37,4 +39,226 @@
 .header-bg .nav-menu ul .nav-menu__busket {
   background-color: #7ab131;
   border-bottom: 5px solid #568716;
+}
+.content .content__top-bg {
+  min-height: 735px;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 65%, #110f18 100%), url(../img/board_bg.png) no-repeat;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 65%, #110f18 100%), url(../img/board_bg.png) no-repeat;
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 65%, #110f18 100%), url(../img/board_bg.png) no-repeat;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#110f18', GradientType=0);
+  /* IE6-9 */
+}
+.content .content__middle-bg {
+  min-height: 1120px;
+  background-color: #110f18;
+}
+.content .content__middle-bg .content__middle {
+  position: relative;
+  top: -380px;
+}
+.content .content__bottom-bg {
+  min-height: 850px;
+  background: url(../img/bottom_bg.jpg) no-repeat;
+}
+.content .content__top .screens {
+  text-align: center;
+}
+.content .content__top .screens h1 {
+  font: 72px/74px "OpenSans-Semibold";
+  color: #fff;
+}
+.content .content__top .screens h1 span {
+  font-family: "OpenSans-Light";
+}
+.content .content__middle .lSSlideOuter .lSPager {
+  display: none;
+}
+.content .content__middle .middle__offers {
+  padding: 0 28px;
+  min-height: 580px;
+  background-color: #fff;
+}
+.content .content__middle .middle__offers .offers__drivingDirect {
+  padding: 50px 0 20px 0;
+}
+.content .content__middle .middle__offers .offers__drivingDirect ul {
+  display: inline-flex;
+}
+.content .content__middle .middle__offers .offers__drivingDirect ul li {
+  width: 295px;
+  height: 55px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #e4e3e7;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.content .content__middle .middle__offers .offers__drivingDirect ul li a {
+  display: inline-block;
+  height: 55px;
+  font: 16px/55px "OpenSans-Semibold";
+  color: #5043a1;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.content .content__middle .middle__offers .offers__drivingDirect ul .backward {
+  position: relative;
+  left: -40px;
+}
+.content .content__middle .middle__offers .info__status p {
+  height: 35px;
+  font: 16px/35px "OpenSans-Light";
+}
+.content .content__middle .middle__offers .info__status p span {
+  display: inline-block;
+  width: 140px;
+  height: 35px;
+  font: 14px/35px "OpenSans-Semibold";
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #e22f37;
+  border-radius: 5px;
+}
+.content .content__middle .middle__offers .info__monthBussynes,
+.content .content__middle .middle__offers .info__descripton {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.content .content__middle .middle__offers .info__monthBussynes p,
+.content .content__middle .middle__offers .info__descripton p {
+  padding: 18px 28px;
+  font: 16px/18px "OpenSans-Light";
+  text-indent: -85px;
+  margin-left: 60px;
+}
+.content .content__middle .middle__offers .info__monthBussynes p span,
+.content .content__middle .middle__offers .info__descripton p span {
+  font-family: "OpenSans-Semibold";
+}
+.content .content__middle .middle__offers .info__descripton {
+  padding-top: 50px;
+}
+.content .content__middle .middle__offers .info__descripton p {
+  width: 100%;
+}
+.content .content__middle .middle__offers .description__print button {
+  width: 180px;
+  height: 52px;
+  margin: 35px 0;
+  font: 16px/18px "OpenSans-Semibold";
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #3c2b99;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.content .content__middle .offers__date {
+  display: inline-flex;
+}
+.content .content__middle .offers__date .date__year {
+  padding: 16px 14px 16px 0;
+}
+.content .content__middle .offers__date .date__year select {
+  width: 100px;
+  height: 45px;
+  font: 16px/18px "OpenSans-Semibold";
+  color: #3c2b99;
+  text-align-last: center;
+  text-align: center;
+  border-color: #e4e3e7;
+  border-radius: 5px;
+  outline: none;
+}
+.content .content__middle .offers__date .date__year select option {
+  text-align: center;
+}
+.content .content__middle .offers__date .date__mounth ul {
+  display: inline-flex;
+  width: 100%;
+  padding: 16px 14px;
+}
+.content .content__middle .offers__date .date__mounth ul li {
+  background-color: #7ab131;
+}
+.content .content__middle .offers__date .date__mounth ul li a {
+  display: inline-block;
+  height: 45px;
+  padding: 0 16px;
+  font: 12px/45px "OpenSans";
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.content .content__middle .offers__date .date__mounth ul li a:hover {
+  background-color: #568716;
+}
+.content .content__middle .offers__date .date__mounth ul li:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.content .content__middle .offers__date .date__mounth ul li:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.content .content__middle .offers__date .date__mounth ul .mounth__feb,
+.content .content__middle .offers__date .date__mounth ul .mounth__apr,
+.content .content__middle .offers__date .date__mounth ul .mounth__may {
+  background-color: #e22f37;
+}
+.content .content__middle .offers__totalPrice p {
+  padding: 40px 0 30px;
+  font: 32px/34px "OpenSans";
+  color: #3c2b99;
+}
+.content .content__middle .offers__checkout {
+  width: 100%;
+  height: 70px;
+  font: 16px/18px "OpenSans-Semibold";
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  outline: none;
+  background-color: #7ab131;
+  border: none;
+  border-bottom: 5px solid #568716;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.content .content__middle .offers__checkout:hover {
+  background-color: #568716;
+}
+.content .middle__map {
+  position: relative;
+  top: -365px;
+}
+.content .middle__map .map__watch {
+  width: 100%;
+  height: 50px;
+  font: 16px/18px "OpenSans-Semibold";
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  outline: none;
+  background-color: #3c2b99;
+  border: none;
+  border-bottom: 5px solid #2e207a;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.content .middle__map .map__watch:hover {
+  background-color: #2e207a;
+}
+.content .middle__info {
+  position: relative;
+  top: -365px;
+}
+.content .middle__info p {
+  padding: 50px 0 90px;
+  font: 24px/36px "OpenSans-Light";
+  color: #fff;
 }

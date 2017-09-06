@@ -17,6 +17,8 @@
       }
       a{
         padding: 0 15px;
+        height: 65px;
+        display: inline-block;
         font: 14px/65px "OpenSans-Semibold";
         color: #fff;
         text-transform: uppercase;
@@ -41,3 +43,236 @@
   }
 }
 
+.content{
+  .content__top-bg{
+    min-height: 735px;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 65%, rgba(17,15,24,1) 100%), url(../img/board_bg.png) no-repeat; /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 65%,rgba(17,15,24,1) 100%), url(../img/board_bg.png) no-repeat; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 65%,rgba(17,15,24,1) 100%), url(../img/board_bg.png) no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#110f18',GradientType=0 ); /* IE6-9 */
+  }
+  .content__middle-bg{
+    min-height: 1120px;
+    background-color: #110f18;
+    .content__middle{
+      position: relative;
+      top: -380px;
+    }
+  }
+  .content__bottom-bg{
+    min-height: 850px;
+    background: url(../img/bottom_bg.jpg) no-repeat;
+  }
+  .content__top {
+    .screens{
+      text-align: center;
+      h1{
+        font: 72px/74px "OpenSans-Semibold";
+        color: #fff;
+        span{
+          font-family: "OpenSans-Light";
+        }
+      }
+    }
+  }
+  .content__middle{
+    .lSSlideOuter {
+      .lSPager{
+        display: none;
+      }
+    }
+    .middle__offers {
+      padding: 0 28px;
+      min-height: 580px;
+      background-color: #fff;
+      .offers__drivingDirect {
+        padding: 50px 0 20px 0;
+        ul {
+          display: inline-flex;
+          li {
+            width: 295px;
+            height: 55px;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #e4e3e7;
+            border-radius: 30px;
+            cursor: pointer;
+            a {
+              display: inline-block;
+              height: 55px;
+              font: 16px/55px "OpenSans-Semibold";
+              color: #5043a1;
+              text-transform: uppercase;
+              text-decoration: none;
+            }
+          }
+          //li:???{
+          //  z-index: 1;
+          //  background-color: #3c2b99;
+          //  a{
+          //    color: #fff;
+          //  }
+          //}
+          .backward {
+            position: relative;
+            left: -40px;
+          }
+        }
+      }
+      .info__status {
+        p {
+          height: 35px;
+          font: 16px/35px "OpenSans-Light";
+          span {
+            display: inline-block;
+            width: 140px;
+            height: 35px;
+            font: 14px/35px "OpenSans-Semibold";
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #e22f37;
+            border-radius: 5px;
+          }
+        }
+      }
+      .info__monthBussynes,
+      .info__descripton {
+        display: inline-flex;
+        flex-wrap: wrap;
+        p {
+          padding: 18px 28px;
+          font: 16px/18px "OpenSans-Light";
+          text-indent: -85px;
+          margin-left: 60px;
+          span {
+            font-family: "OpenSans-Semibold";
+          }
+        }
+      }
+      .info__descripton {
+        padding-top: 50px;
+        p{
+          width: 100%;
+        }
+      }
+      .description__print button {
+        width: 180px;
+        height: 52px;
+        margin: 35px 0;
+        font: 16px/18px "OpenSans-Semibold";
+        color: #fff;
+        text-transform: uppercase;
+        background-color: #3c2b99;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+      }
+    }
+    .offers__date{
+      display: inline-flex;
+      .date__year{
+        padding: 16px 14px 16px 0;
+        select {
+          width: 100px;
+          height: 45px;
+          font: 16px/18px "OpenSans-Semibold";
+          color: #3c2b99;
+          text-align-last: center;
+          text-align: center;
+          border-color: #e4e3e7;
+          border-radius: 5px;
+          outline: none;
+          option{
+            text-align: center;
+          }
+        }
+      }
+      .date__mounth ul{
+        display: inline-flex;
+        width: 100%;
+        padding: 16px 14px;
+        li{
+          background-color: #7ab131;
+          a{
+            display: inline-block;
+            height: 45px;
+            padding: 0 16px;
+            font: 12px/45px "OpenSans";
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+          a:hover{
+            background-color: #568716;
+          }
+        }
+        li:first-child{
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        li:last-child{
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+        .mounth__feb,
+        .mounth__apr,
+        .mounth__may{
+          background-color: #e22f37;
+        }
+      }
+    }
+    .offers__totalPrice p{
+      padding: 40px 0 30px;
+      font: 32px/34px "OpenSans";
+      color: #3c2b99;
+    }
+    .offers__checkout{
+      width: 100%;
+      height: 70px;
+      font: 16px/18px "OpenSans-Semibold";
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      outline: none;
+      background-color: #7ab131;
+      border: none;
+      border-bottom: 5px solid #568716;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    .offers__checkout:hover{
+      background-color: #568716;
+    }
+  }
+  .middle__map{
+    position: relative;
+    top: -365px;
+    .map__watch{
+      width: 100%;
+      height: 50px;
+      font: 16px/18px "OpenSans-Semibold";
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      outline: none;
+      background-color: #3c2b99;
+      border: none;
+      border-bottom: 5px solid #2e207a;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    .map__watch:hover{
+      background-color: #2e207a;
+    }
+  }
+  .middle__info{
+    position: relative;
+    top: -365px;
+    p {
+      padding: 50px 0 90px;
+      font: 24px/36px "OpenSans-Light";
+      color: #fff;
+    }
+  }
+}
