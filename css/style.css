@@ -2,6 +2,10 @@
   min-height: 65px;
   background-color: #3c2b99;
 }
+.header-bg .header__logo {
+  text-align: center;
+  padding-top: 15px;
+}
 .header-bg .nav-menu ul {
   display: inline-flex;
 }
@@ -42,26 +46,21 @@
 }
 .content .content__top-bg {
   min-height: 735px;
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 65%, #110f18 100%), url(../img/board_bg.png) no-repeat;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 50%, rgba(136, 135, 140, 0.5) 65%, rgba(17, 15, 24, 0.71) 80%, #110f18 100%), url(../img/board_bg.png) no-repeat;
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 65%, #110f18 100%), url(../img/board_bg.png) no-repeat;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 50%, rgba(136, 135, 140, 0.5) 65%, rgba(17, 15, 24, 0.71) 80%, #110f18 100%), url(../img/board_bg.png) no-repeat;
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 65%, #110f18 100%), url(../img/board_bg.png) no-repeat;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(136, 135, 140, 0.5) 65%, rgba(17, 15, 24, 0.71) 80%, #110f18 100%), url(../img/board_bg.png) no-repeat;
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#110f18', GradientType=0);
   /* IE6-9 */
 }
+.content .lSSlideOuter .lSPager {
+  display: none;
+}
 .content .content__middle-bg {
   min-height: 1120px;
   background-color: #110f18;
-}
-.content .content__middle-bg .content__middle {
-  position: relative;
-  top: -380px;
-}
-.content .content__bottom-bg {
-  min-height: 850px;
-  background: url(../img/bottom_bg.jpg) no-repeat;
 }
 .content .content__top .screens {
   text-align: center;
@@ -72,9 +71,6 @@
 }
 .content .content__top .screens h1 span {
   font-family: "OpenSans-Light";
-}
-.content .content__middle .lSSlideOuter .lSPager {
-  display: none;
 }
 .content .content__middle .middle__offers {
   padding: 0 28px;
@@ -103,6 +99,13 @@
   color: #5043a1;
   text-transform: uppercase;
   text-decoration: none;
+}
+.content .content__middle .middle__offers .offers__drivingDirect ul li:first-child {
+  z-index: 1;
+  background-color: #3c2b99;
+}
+.content .content__middle .middle__offers .offers__drivingDirect ul li:first-child a {
+  color: #fff;
 }
 .content .content__middle .middle__offers .offers__drivingDirect ul .backward {
   position: relative;
@@ -233,8 +236,7 @@
   background-color: #568716;
 }
 .content .middle__map {
-  position: relative;
-  top: -365px;
+  padding-top: 20px;
 }
 .content .middle__map .map__watch {
   width: 100%;
@@ -253,12 +255,140 @@
 .content .middle__map .map__watch:hover {
   background-color: #2e207a;
 }
-.content .middle__info {
-  position: relative;
-  top: -365px;
-}
 .content .middle__info p {
   padding: 50px 0 90px;
   font: 24px/36px "OpenSans-Light";
   color: #fff;
+}
+.content .middle__form {
+  background: url(../img/bottom_bg.jpg) no-repeat;
+  background-size: cover;
+}
+.content .middle__form .form__head {
+  text-align: center;
+}
+.content .middle__form .form__head p {
+  font: 48px/50px "OpenSans-Light";
+  color: #fff;
+}
+.content .middle__form .form__head p span {
+  font: 48px/50px "OpenSans-Semibold";
+}
+.content .middle__form .form__head span {
+  display: inline-block;
+  margin: 40px 0 30px;
+  font: 24px/36px "OpenSans-Light";
+  color: #fff;
+}
+.content .middle__form .form input {
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  border: 1px solid #44414f;
+  border-radius: 5px;
+  outline: none;
+}
+.content .middle__form .form input[placeholder] {
+  padding-left: 25px;
+  font: 16px/45px "OpenSans";
+  color: #fff;
+}
+.content .middle__form .form textarea {
+  width: 100%;
+  height: 90px;
+  margin-top: 20px;
+  resize: none;
+  background: transparent;
+  border-color: #44414f;
+  border-radius: 5px;
+  outline: none;
+}
+.content .middle__form .form textarea[placeholder] {
+  padding-left: 25px;
+  font: 16px/45px "OpenSans";
+  color: #fff;
+}
+.content .middle__form .form__btn {
+  padding-top: 20px;
+  text-align: center;
+}
+.content .middle__form .form__btn button {
+  width: 350px;
+  height: 70px;
+  font: 16px/18px "OpenSans-Semibold";
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #3b2a95;
+  border: none;
+  border-bottom: #2e207a;
+  border-radius: 5px;
+  outline: none;
+}
+.content .middle__form .form__btn button:hover {
+  background-color: #2e207a;
+}
+.content .middle__form .footer {
+  margin-top: 80px;
+}
+.content .middle__form .footer h5 {
+  padding-bottom: 30px;
+}
+.content .middle__form .footer h5 a {
+  font: 16px/18px "OpenSans-Semibold";
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.content .middle__form .footer h5 a:hover {
+  text-decoration: underline;
+}
+.content .middle__form .footer ul a {
+  font: 14px/36px "OpenSans";
+  color: #fff;
+  text-decoration: none;
+}
+.content .middle__form .footer ul a:hover {
+  text-decoration: underline;
+}
+.content .middle__form .footer .footer__thirdList {
+  padding-top: 50px;
+}
+.content .middle__form .footer .footer__contacts {
+  text-align: right;
+}
+.content .middle__form .footer .footer__contacts .tel {
+  display: block;
+  font: 32px/34px "OpenSans";
+  color: #fff;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+.content .middle__form .footer .footer__contacts .tel:hover {
+  text-decoration: underline;
+}
+.content .middle__form .footer .footer__contacts p {
+  font: 14px/36px "OpenSans";
+  color: #fff;
+}
+.content .middle__form .footer .footer__contacts p a {
+  color: #fff;
+  text-decoration: underline;
+}
+.content .middle__form .footer .footer__bottom {
+  padding: 95px 0 55px;
+}
+.content .middle__form .footer .footer__bottom .bottom__copy p {
+  font: 14px/16px "OpenSans";
+  color: #fff;
+}
+.content .middle__form .footer .footer__bottom .bottom__autor {
+  text-align: right;
+}
+.content .middle__form .footer .footer__bottom .bottom__autor p {
+  font: 14px/16px "OpenSans";
+  color: #fff;
+}
+.content .middle__form .footer .footer__bottom .bottom__autor p a {
+  color: #fff;
+  text-decoration: underline;
 }
