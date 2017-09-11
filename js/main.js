@@ -6,3 +6,17 @@ $(document).ready(function() {
         loop:true
     });
 });
+
+$(window).resize(function(){
+    if (window.matchMedia('screen and (max-width: 800px)').matches) {
+        $('.container').removeClass('container').addClass('container-fluid');
+    } else {
+        $('.container-fluid').removeClass('container-fluid').addClass('container');
+    }
+});
+
+$(window).on('load', function () {
+    if (window.matchMedia('screen and (max-width: 800px)').matches) {
+        $('.container').removeClass('container').addClass('container-fluid');
+    }
+});
